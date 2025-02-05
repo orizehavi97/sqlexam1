@@ -1,6 +1,6 @@
 -- Ex 1
 CREATE TABLE televisions (
-	id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     catalog_number TEXT NOT NULL UNIQUE,
     brand TEXT NOT NULL CHECK (brand IN ('Samsung', 'LG', 'Sony')),
     model TEXT NOT NULL UNIQUE,
@@ -12,8 +12,7 @@ CREATE TABLE televisions (
     smart_tv BOOLEAN NOT NULL DEFAULT 0,
     os TEXT DEFAULT NULL,
     panel_type TEXT NOT NULL CHECK (panel_type IN ('OLED', 'QLED', 'LED'))
-	);
-
+);
 
 -- Ex 2
 INSERT INTO televisions
